@@ -1,6 +1,5 @@
 package com.app.randomusersproejctdem.Repository;
 
-import com.app.randomusersproejctdem.Entity.Location;
 import com.app.randomusersproejctdem.Entity.Users;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
@@ -12,7 +11,5 @@ import java.util.Optional;
 @CrossOrigin(origins ="*")
 @RepositoryRestResource
 public interface UsersRepository extends CrudRepository<Users, Long> {
-	Optional<Users> findById(long id);
-
-	List<Users> findByLocation(Location location);
+	List<Users> findByLocation(String location);
 }

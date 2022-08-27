@@ -67,9 +67,10 @@ public final class Users {
 	}
 
 	@JsonCreator
-	public Users(@JsonProperty("gender") String gender, @JsonProperty("name") Name name,
+	public Users(
+			@JsonProperty("gender") String gender, @JsonProperty("name") Name name,
 				 @JsonProperty("email") String email, @JsonProperty("location") Location location) {
-		//this.location = null;
+
 		this.gender = gender;
 		this.name = name;
 		this.email = email;
