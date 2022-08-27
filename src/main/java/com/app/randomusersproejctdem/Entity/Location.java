@@ -33,13 +33,13 @@ public final class Location {
 	}
 */
 	@JsonCreator
-	public Location(@JsonProperty("country") String country, @JsonProperty("user") Users user) {
+	public Location(@JsonProperty("country") String country) {
 		this.country = country;
-		this.user =user;
+		//this.user =user;
 	}
 	public String toString(){
 		StringBuilder locationString = new StringBuilder();
-		locationString.append("Country: ").append(country.toString()).append(" Users: ").append(user.getId());
+		locationString.append("Country: ").append(country.toString());
 		return locationString.toString();
 	}
 	@JsonCreator
