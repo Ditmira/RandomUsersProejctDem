@@ -1,5 +1,6 @@
 package com.app.randomusersproejctdem.Repository;
 
+import com.app.randomusersproejctdem.Entity.Location;
 import com.app.randomusersproejctdem.Entity.Users;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
