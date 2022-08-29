@@ -52,7 +52,6 @@ public class RandomUsersController {
 
 
  */
-
     @GetMapping("/users")
     public Iterable<Users> findAllUsers() {
         return repository.findAll();
